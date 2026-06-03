@@ -1,5 +1,20 @@
 ## v0.12.0 (2026-06-03)
 
+### Feat
+
+- **render**: run ACES 2.0 DRT as OCIO's GPU algorithm ported to WGSL (LUX-119)
+- **render**: unify plugin tonemap onto lux::tonemap + 3D-LUT host binding
+- **core**: reserve system-texture sentinel handles (LUX-18)
+- **render**: route Render3D tonemap through lux::tonemap (LUX-18)
+- **render**: engine-owned AgX/Tony 3D-LUT slabs for lux::tonemap (LUX-18)
+
+### Fix
+
+- **render**: extend ACES-2 LUT to EV[-12,7] + address review findings (LUX-119)
+- **render**: bake real ACES 2.0 DRT into a LUT; delete the wrong hand-fit (LUX-119)
+- **render**: external-reference tonemap gate + fix AgX/Tony bakes from real LUTs (LUX-115)
+- **render**: scope shader compose hard-error to engine-internal shaders
+
 ## v0.11.0 (2026-05-29)
 
 ### BREAKING CHANGE
@@ -83,11 +98,6 @@ scene depth buffer must update accordingly.
 
 ### Feat
 
-- **render**: run ACES 2.0 DRT as OCIO's GPU algorithm ported to WGSL (LUX-119)
-- **render**: unify plugin tonemap onto lux::tonemap + 3D-LUT host binding
-- **core**: reserve system-texture sentinel handles (LUX-18)
-- **render**: route Render3D tonemap through lux::tonemap (LUX-18)
-- **render**: engine-owned AgX/Tony 3D-LUT slabs for lux::tonemap (LUX-18)
 - **render**: GPU instancing in the bindless arm (LUX-85 B-7.2) (#61)
 - **render**: map legacy Blinn-Phong onto unified PBR (LUX-85 B-7.1) (#59)
 - **render**: real bindless material-texture-array population (LUX-103)
@@ -288,10 +298,6 @@ scene depth buffer must update accordingly.
 
 ### Fix
 
-- **render**: extend ACES-2 LUT to EV[-12,7] + address review findings (LUX-119)
-- **render**: bake real ACES 2.0 DRT into a LUT; delete the wrong hand-fit (LUX-119)
-- **render**: external-reference tonemap gate + fix AgX/Tony bakes from real LUTs (LUX-115)
-- **render**: scope shader compose hard-error to engine-internal shaders
 - **render**: make no_hot_path_sync blocking audit directory-aware (PR-M) (#89)
 - **bench**: correct realhw_frame_budget patch paths (#71)
 - **scene**: mark SkinnedMesh rest mesh persistent so it rasterizes (LUX-I-110) (#65)
@@ -451,6 +457,65 @@ scene depth buffer must update accordingly.
 ### Perf
 
 - **node**: borrow input spreads by slice in read-only spread ops
+
+## v0.9.0 (2026-04-20)
+
+## v0.8.0 (2026-04-20)
+
+## v0.7.0 (2026-04-20)
+
+## v0.6.0 (2026-04-20)
+
+## v0.5.0 (2026-04-20)
+
+## v0.4.0 (2026-04-20)
+
+## v0.3.0 (2026-04-20)
+
+## v0.2.0 (2026-04-20)
+
+## v0.10.0 (2026-04-20)
+
+### Feat
+
+- **node**: LoadImage decodes .hdr + tags 8-bit as sRGB
+- **node**: red error dot + tinted border for panicking nodes
+- **ui**: route backward wires with extended lead-out + vertical lift
+- **ui**: magnet-snap wire drag to nearest compatible pin
+- **ui**: wire-drag search filters by pin type + auto-connects on pick
+- **ui**: pin tooltips show defaults + ranges
+- **ui**: fuzzy search indexes summary + tags, not just type names
+- **ui**: menu bar + ? cheatsheet + empty-canvas CTA
+- **ui**: welcome splash modal on first launch
+- **app**: replace hardcoded triangle demo with Mouse → Circle sample
+- **core**: add UserPrefs persistence to ~/.config/lux/prefs.json
+- **ui**: add motion.rs — single source of truth for editor animation
+- **app**: F8 frame-budget profiler HUD + tripwire logging
+
+### Fix
+
+- **node**: drop dead `ambient` pin from LambertMaterial
+- **node**: naming hygiene — unify category separator, dedupe Mirror, hide stub Path
+- **node**: close GPU texture leaks in texture-source + feedback
+- **ui**: use egui default sans-serif for Proportional text
+
+### Perf
+
+- **node**: borrow input spreads by slice in read-only spread ops
+
+## v0.9.0 (2026-04-20)
+
+## v0.8.0 (2026-04-20)
+
+## v0.7.0 (2026-04-20)
+
+## v0.6.0 (2026-04-20)
+
+## v0.5.0 (2026-04-20)
+
+## v0.4.0 (2026-04-20)
+
+## v0.3.0 (2026-04-20)
 
 ## v0.9.0 (2026-04-20)
 
