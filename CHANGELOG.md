@@ -1,3 +1,9 @@
+## v0.37.1 (2026-07-03)
+
+### Fix
+
+- **render**: anisotropy shades in the mesh UV tangent frame (#158)
+
 ## v0.37.0 (2026-07-03)
 
 ### Feat
