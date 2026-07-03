@@ -1,3 +1,238 @@
+## v0.37.0 (2026-07-03)
+
+### Feat
+
+- **render**: KHR_texture_transform + second UV set (texCoord=1) (#157)
+
+## v0.36.0 (2026-07-03)
+
+### Feat
+
+- **scene**: glTF KHR material extensions render as authored (#154)
+
+## v0.35.0 (2026-06-14)
+
+### Feat
+
+- **render**: glTF animation playback — SkeletonPose plays authored clips, the sine pose is deleted (#153)
+
+## v0.34.0 (2026-06-13)
+
+### Feat
+
+- **render**: apply glTF scene-node transform hierarchy on import (#152)
+
+## v0.33.0 (2026-06-13)
+
+### Feat
+
+- **render**: per-texture glTF sampler states — DamagedHelmet renders canonically (#151)
+
+## v0.32.1 (2026-06-12)
+
+### Fix
+
+- **render**: bindless texture array owns its views — ~100MB leaked per headless render (LUX-211) (#149)
+
+## v0.32.0 (2026-06-12)
+
+### Feat
+
+- **render**: IBL chrome mirrors — UE4 reflection-capture mip schedule, coat mip, aniso metallic (#148)
+
+## v0.31.0 (2026-06-12)
+
+### Feat
+
+- **render**: sorted transmissive pass — real see-through glass (LUX-175) (#147)
+
+## v0.30.0 (2026-06-12)
+
+### Feat
+
+- **render**: bent-normal aniso IBL; BSDF doc-truth gate; honest docs (#146)
+
+## v0.29.0 (2026-06-12)
+
+### Feat
+
+- **render**: BSDF feature_flags reach the GPU; seven lobes come alive (#145)
+
+## v0.28.0 (2026-06-12)
+
+### Feat
+
+- **render**: wire Kaplanyan specular AA into both mesh shaders (#144)
+
+## v0.27.0 (2026-06-12)
+
+### Feat
+
+- **render**: expose scene temporal upscaler; texture.Upscale honest (#143)
+
+## v0.26.0 (2026-06-12)
+
+### Feat
+
+- **render**: TAA consumes gbuffer motion vectors; default on (#142)
+
+## v0.25.0 (2026-06-12)
+
+### Feat
+
+- **render**: PCSS distance-dependent penumbra; the shadow_filter pin goes live (LUX-169) (#141)
+
+## v0.24.2 (2026-06-12)
+
+### Refactor
+
+- **render**: delete the parked VSM stack — finish-or-delete resolved as delete (LUX-168) (#140)
+
+## v0.24.1 (2026-06-11)
+
+### Perf
+
+- **render**: radiance cache samples 16 lights per ray hit — 1000_lights 25→4 ms/frame (#139)
+
+## v0.24.0 (2026-06-11)
+
+### Feat
+
+- **render**: un-fake area + IES lights — canonical LTC port + profile sampling (LUX-166) (#138)
+
+## v0.23.0 (2026-06-11)
+
+### Feat
+
+- **render**: omni point cube + spot shadow views; depth compare in metres (LUX-165) (#136)
+
+### Fix
+
+- **render**: update shadow orchestrator bench for LUX-165 ShadowEmitInputs (#137)
+
+## v0.22.0 (2026-06-11)
+
+### Feat
+
+- **render**: cascade caster coverage + 48-direction sun sweep gate; loader rejects unknown pins; GI plugin registered (#135)
+
+## v0.21.0 (2026-06-11)
+
+### Feat
+
+- **render**: water transmission + Jacobian caustics + flow advection; warn-once drops deleted (#134)
+
+## v0.20.0 (2026-06-11)
+
+### Feat
+
+- **render**: Tessendorf FFT water for real — spectrum, butterflies, displaced surface (#133)
+
+## v0.19.0 (2026-06-11)
+
+### Feat
+
+- **render**: sky-apply pass renders the Hillaire LUTs for real (#132)
+
+## v0.18.0 (2026-06-11)
+
+### Feat
+
+- **render**: volumetric cloud trace + temporal denoise + depth-masked composite (#131)
+
+## v0.17.0 (2026-06-11)
+
+### Feat
+
+- **render**: depth-aware volumetric fog composite; clear-color facade deleted (#130)
+
+## v0.16.3 (2026-06-11)
+
+### Fix
+
+- **render**: fog inject + scatter dispatch for real; fake telemetry deleted (#129)
+
+## v0.16.2 (2026-06-11)
+
+### Fix
+
+- **app**: CLI hardening — unknown flags never launch a window; dumps honor patch size (#128)
+
+## v0.16.1 (2026-06-11)
+
+### Fix
+
+- **render**: readback contract — timeout is an error, short buffers rejected, warmup drains (#127)
+
+## v0.16.0 (2026-06-11)
+
+### Feat
+
+- **core**: explicit active-output model — deterministic, visible, inert to unwired sinks (#126)
+
+## v0.15.4 (2026-06-10)
+
+### Fix
+
+- **render**: windowed display shows per-frame GPU content; recycle transients (#125)
+
+## v0.15.3 (2026-06-10)
+
+### Fix
+
+- **app**: restore Space=add-node and Tab=fuzzy-search; cue transport scopes to its panel (#124)
+
+## v0.15.2 (2026-06-10)
+
+### Fix
+
+- **build**: restore the lux-render bench file that leaked out of this branch
+
+## v0.15.1 (2026-06-10)
+
+### Fix
+
+- **app**: wall-clock test budgets become CI-aware; nextest reports all failures
+- **app**: implement the documented runner-drift relax in the lockdown gate
+
+## v0.15.0 (2026-06-10)
+
+### Feat
+
+- **render**: directional SH-L1 global illumination
+- **app**: open a .lux patch from the CLI in the windowed app
+- **render**: world-space single-bounce irradiance cache (first visible GI)
+
+### Fix
+
+- **app**: strengthen red_wall_bounce GI demo (wall flush, +light)
+- **render**: guard GPU profiler against re-mapping an in-flight slot
+- **render**: denoise the radiance cache (64 rays + spatial diffusion)
+- **app**: rewrite stale red_wall_bounce GI demo + add regression test
+- **render**: request bindless features on the windowed device so 3D renders
+
+### Refactor
+
+- **render**: carve radiance_cache.rs into a directory module
+
+## v0.14.0 (2026-06-04)
+
+### Feat
+
+- **render**: add gbuffer/visibility prepass to Render3D framegraph (LUX-129)
+
+## v0.13.0 (2026-06-04)
+
+### Feat
+
+- **scene**: route glTF textures so imported models render textured (LUX-127)
+
+## v0.12.1 (2026-06-04)
+
+### Refactor
+
+- **render**: carve execute.rs arm bodies into texop_dispatch (LUX-25)
+
 ## v0.12.0 (2026-06-03)
 
 ### Feat
