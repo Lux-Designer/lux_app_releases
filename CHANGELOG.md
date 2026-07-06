@@ -1,3 +1,10 @@
+## v0.37.2 (2026-07-06)
+
+### Fix
+
+- **render**: meshlet cone bounds via meshoptimizer + require CI on main (#162)
+- **render**: meshlet cull tests real bounds from the real eye (#159)
+
 ## v0.37.1 (2026-07-03)
 
 ### Fix
