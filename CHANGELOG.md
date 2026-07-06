@@ -1,3 +1,9 @@
+## v0.37.3 (2026-07-06)
+
+### Fix
+
+- **render**: keep skipped filters' cached textures alive across frames
+
 ## v0.37.2 (2026-07-06)
 
 ### Fix
