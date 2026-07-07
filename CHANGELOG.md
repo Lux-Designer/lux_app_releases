@@ -1,3 +1,9 @@
+## v0.37.4 (2026-07-07)
+
+### Fix
+
+- **render**: instanced draws survive off-origin framing (#164)
+
 ## v0.37.3 (2026-07-06)
 
 ### Fix
