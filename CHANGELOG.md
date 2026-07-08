@@ -1,3 +1,9 @@
+## v0.37.8 (2026-07-08)
+
+### Fix
+
+- **color**: WhiteBalance neutral default is a true identity + honest FXAA docs
+
 ## v0.37.7 (2026-07-08)
 
 ### Fix
