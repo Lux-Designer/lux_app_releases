@@ -1,3 +1,9 @@
+## v0.37.7 (2026-07-08)
+
+### Fix
+
+- **core**: run_shader output colorspace follows its primary input
+
 ## v0.37.6 (2026-07-08)
 
 ### Fix
