@@ -1,3 +1,9 @@
+## v0.37.6 (2026-07-08)
+
+### Fix
+
+- **particle**: cap RenderParticles2D draws to stop full-frame corruption (#166)
+
 ## v0.37.5 (2026-07-08)
 
 ### Fix
