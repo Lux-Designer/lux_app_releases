@@ -1,3 +1,9 @@
+## v0.37.5 (2026-07-08)
+
+### Fix
+
+- **color**: stop ColorGrade3DLUT crashing the app on .cube load
+
 ## v0.37.4 (2026-07-07)
 
 ### Fix
