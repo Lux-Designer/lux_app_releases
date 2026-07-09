@@ -1,3 +1,9 @@
+## v0.37.9 (2026-07-09)
+
+### Fix
+
+- **render**: bloom reads its input same-frame, not one frame stale (#169)
+
 ## v0.37.8 (2026-07-08)
 
 ### Fix
