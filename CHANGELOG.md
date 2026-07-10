@@ -1,3 +1,11 @@
+## v0.37.10 (2026-07-10)
+
+### Fix
+
+- **loop**: attest the open PR's head, not the branch the tree sits on
+- **loop**: the reviewer could not read a diff
+- **loop**: stop telling the executor to run a suite it cannot finish
+
 ## v0.37.9 (2026-07-09)
 
 ### Fix
