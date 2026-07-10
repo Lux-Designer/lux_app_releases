@@ -1,3 +1,20 @@
+## v0.38.0 (2026-07-10)
+
+### BREAKING CHANGE
+
+- 18 node types are removed from the registry:
+scene.GIHybrid, scene.GIProbes, scene.GICache, scene.GISdf,
+scene.GIRayTrace, scene.GICascades, scene.GIDDGI, scene.RestirIndirect,
+scene.RestirIbl, scene.LightProbe, scene.SkyLight, texture.HorizonAO,
+texture.RayAO, texture.ReflectScreen, texture.ReflectRayTrace,
+texture.Denoise, texture.MotionBlurSS, and the duplicate
+texture.ShaderToy (texture.Shadertoy is unaffected). Patches carrying
+these nodes load with a dropped-node warning; none ever produced output.
+
+### Feat
+
+- delete 18 do-nothing nodes and fence the 3 that cannot draw (#170)
+
 ## v0.37.10 (2026-07-10)
 
 ### Fix
