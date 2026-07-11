@@ -1,3 +1,9 @@
+## v0.39.0 (2026-07-11)
+
+### Feat
+
+- **texture**: linear-light fp16 2D chain, W3C blend + composite, layer blend modes
+
 ## v0.38.0 (2026-07-10)
 
 ### BREAKING CHANGE
