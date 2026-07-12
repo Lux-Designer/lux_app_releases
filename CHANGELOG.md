@@ -1,3 +1,9 @@
+## v0.40.0 (2026-07-12)
+
+### Feat
+
+- **ui**: every node wears its live output on its body
+
 ## v0.39.0 (2026-07-11)
 
 ### Feat
