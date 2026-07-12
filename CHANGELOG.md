@@ -1,3 +1,9 @@
+## v0.43.0 (2026-07-12)
+
+### Feat
+
+- **app**: send output fullscreen to the monitor you picked
+
 ## v0.42.1 (2026-07-12)
 
 ### Perf
