@@ -1,3 +1,9 @@
+## v0.42.1 (2026-07-12)
+
+### Perf
+
+- **app**: a frozen editor stops repainting a frame nobody changed
+
 ## v0.42.0 (2026-07-12)
 
 ### Feat
