@@ -1,3 +1,9 @@
+## v0.42.0 (2026-07-12)
+
+### Feat
+
+- **app**: crash recovery finally says something
+
 ## v0.41.1 (2026-07-12)
 
 ### Fix
