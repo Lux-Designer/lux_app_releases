@@ -1,3 +1,9 @@
+## v0.41.1 (2026-07-12)
+
+### Fix
+
+- **core**: subpatches survive save and reload
+
 ## v0.41.0 (2026-07-12)
 
 ### Feat
