@@ -1,3 +1,9 @@
+## v0.43.1 (2026-07-12)
+
+### Fix
+
+- **core**: a patch you did not change saves the bytes it already had (#181)
+
 ## v0.43.0 (2026-07-12)
 
 ### Feat
