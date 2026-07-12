@@ -1,3 +1,9 @@
+## v0.41.0 (2026-07-12)
+
+### Feat
+
+- **app**: cue GO moves pixels — tick the transition machine, apply presets to the graph
+
 ## v0.40.0 (2026-07-12)
 
 ### Feat
