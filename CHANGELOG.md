@@ -1,3 +1,9 @@
+## v0.44.0 (2026-07-13)
+
+### Feat
+
+- **render**: a node that fails on the GPU now says so on the node
+
 ## v0.43.4 (2026-07-13)
 
 ### Fix
