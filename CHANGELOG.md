@@ -1,3 +1,9 @@
+## v0.43.3 (2026-07-13)
+
+### Fix
+
+- **app**: the file that did not open cleanly now says so on screen (#183)
+
 ## v0.43.2 (2026-07-13)
 
 ### Fix
