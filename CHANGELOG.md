@@ -1,3 +1,9 @@
+## v0.43.2 (2026-07-13)
+
+### Fix
+
+- **core**: a plugin this machine lacks no longer costs you the node
+
 ## v0.43.1 (2026-07-12)
 
 ### Fix
