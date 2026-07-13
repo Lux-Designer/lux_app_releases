@@ -1,3 +1,9 @@
+## v0.43.4 (2026-07-13)
+
+### Fix
+
+- **app**: the welcome cards now do what they say on the card
+
 ## v0.43.3 (2026-07-13)
 
 ### Fix
