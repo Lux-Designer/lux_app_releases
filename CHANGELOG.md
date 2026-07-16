@@ -1,3 +1,9 @@
+## v0.45.0 (2026-07-16)
+
+### Feat
+
+- **app**: every binary says which commit it came from (#189)
+
 ## v0.44.0 (2026-07-13)
 
 ### Feat
